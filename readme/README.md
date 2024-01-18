@@ -9,6 +9,7 @@ Here is my personal currency-conventer project that will immediately help you fi
 - *CSS*
 - *Java Script*
 - *BEM* convention
+- Open Graph Protocol
 
 ## Try demo of currency-converter:
 

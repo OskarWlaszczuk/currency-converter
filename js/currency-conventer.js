@@ -1,5 +1,5 @@
 {
-    let welcome = () => console.log("Dzień dobry!");
+    const welcome = () => console.log("Dzień dobry!");
 
     const onFormElementSubmit = (even) => {
         even.preventDefault()

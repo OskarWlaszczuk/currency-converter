@@ -15,7 +15,8 @@ html {
 
 .body--backgroundImage {
     background-image: url("https://www.careersinpoland.com/media/file/articles/thumbs/950x540_money-in-poland-a-quick-guide-to-polish-currency.jpg");
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .form {

@@ -5,7 +5,7 @@ Here is my personal currency-conventer project that will immediately help you fi
 
 ## Try demo of currency-converter:
 
-[Demo of currency-converter](https://oskarwlaszczuk.github.io/currency-converter/)
+[Demo currency-converter](https://oskarwlaszczuk.github.io/currency-converter/)
 
 ![Screenshot projektu](https://raw.githubusercontent.com/OskarWlaszczuk/currency-converter/6804e2d4e533c588fdb7199aa64f0aa4ec8afcfd/images/2024-01-18%20(5).png)
 

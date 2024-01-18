@@ -3,6 +3,13 @@
 ## Description: 
 Here is my personal currency-conventer project that will immediately help you find out how much Polish zlotys are worth in other currencies. It is simple to work with.
 
+## Languages & Conventions:
+
+- *HTML*
+- *CSS*
+- *Java Script*
+- *BEM* convention
+
 ## Try demo of currency-converter:
 
 [Demo currency-converter](https://oskarwlaszczuk.github.io/currency-converter/)

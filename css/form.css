@@ -77,7 +77,7 @@
 
 .form__paragraph--larger {
     font-size: xx-large;
-    color: rgb(255, 255, 255);
+    color: rgb(124, 10, 10);
     background-color: rgba(247, 87, 19, 0.758);
     font-weight: bolder;
     margin-bottom: 40px;
@@ -93,5 +93,5 @@
 .form__strong {
     text-decoration: underline;
     font-weight: bolder;
-    color: white;
+    color: rgb(124, 10, 10);
 }

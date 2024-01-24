@@ -1,21 +1,21 @@
 {
     const welcome = () => console.log("Dzień dobry!");
 
-    const onFormElementSubmit = (even) => {
-        even.preventDefault()
+    const calculatingResualt = () => {
 
-        const inputElemnet = document.querySelector(".js-pln__input");
-        const resualtElement = document.querySelector(".js-form__strong");
         const euroElement = document.querySelector(".js-radioEuro__input");
         const usdElement = document.querySelector(".js-radioUsd__input");
         const cadElement = document.querySelector(".js-radioCad__input");
         const gbpElement = document.querySelector(".js-radioGbp__input");
 
+        const resualtElement = document.querySelector(".js-form__strong");
+        const inputElemnet = document.querySelector(".js-pln__input");
         const pln = inputElemnet.value;
         const euro = pln * 0.23;
         const usd = pln * 0.25;
         const cad = pln * 0.34;
         const gbp = pln * 0.20;
+
 
         if (euroElement.checked === true) {
             resualtElement.innerText = (`${pln} ZŁ = ${euro.toFixed(2)} euro`);
@@ -26,6 +26,12 @@
         } else if (gbpElement.checked === true) {
             resualtElement.innerText = (`${pln} ZŁ = ${gbp.toFixed(2)} funtów brytyjskich`);
         }
+    }
+
+    const onFormElementSubmit = (even) => {
+        even.preventDefault()
+
+        calculatingResualt();
     };
 
     const initCurrencyConverter = () => {

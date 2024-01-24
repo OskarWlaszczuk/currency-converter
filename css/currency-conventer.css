@@ -14,7 +14,7 @@ html {
     padding: 20px;
 }
 
-@media (min-width:2000px){
+@media (min-width:1500px) {
     .body {
         max-width: 3000px;
         margin: 0;

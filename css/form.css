@@ -6,6 +6,12 @@
     background-color: rgb(250, 249, 249);
 }
 
+@media(min-width:1500px) {
+    .form__fieldset {
+        padding-bottom: 5px;
+    }
+}
+
 .form__legend {
     background-color: rgb(253, 126, 67);
     color: white;
@@ -14,6 +20,13 @@
     border-radius: 15px;
     font-size: larger;
     outline: 2px solid rgb(144, 55, 14);
+}
+
+@media(min-width:1500px) {
+    .form__legend {
+        font-size: 60px;
+        outline-width: 4px;
+    }
 }
 
 .form__button {
@@ -29,10 +42,23 @@
     font-size: larger;
 }
 
+@media (min-width:1500px) {
+    .form__button {
+        font-size: 60px;
+    }
+}
+
 .form__label {
     font-size: larger;
     font-weight: bolder;
 }
+
+@media (min-width:1500px) {
+    .form__label {
+        font-size: 40px;
+    }
+}
+
 
 .form__input {
     text-decoration: none;
@@ -59,10 +85,22 @@
     margin: 10px;
 }
 
+@media(min-width:1500px) {
+    .form__input--radio {
+        width: 20px;
+    }
+}
+
 .form__span--radio {
     text-decoration: none;
     font-weight: normal;
     font-size: smaller;
+}
+
+@media(min-width:1500px) {
+    .form__span--radio {
+        font-size: xx-large;
+    }
 }
 
 .form__paragraph {
@@ -80,9 +118,23 @@
     border-radius: 10px;
 }
 
+@media(min-width:1500px) {
+    .form__paragraph--larger {
+        font-size: 50px;
+        padding: 25px 0;
+        margin-bottom: 20px;
+    }
+}
+
 .form__paragraph--light {
     font-weight: lighter;
     font-style: italic;
+}
+
+@media (min-width:1500px) {
+    .form__paragraph--light {
+        font-size: xx-large;
+    }
 }
 
 .form__strong {

@@ -1,0 +1,9 @@
+.flex__contentBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex__containerForm {
+    flex-basis: 100%;
+}

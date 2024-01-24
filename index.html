@@ -23,34 +23,38 @@
     <link rel="icon" href="images/money-cash-icon-png.webp">
     <link rel="stylesheet" href="./css/currency-conventer.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/flex.css">
     <script defer src="./js/currency-conventer.js"></script>
     <title>Przelicznik walut</title>
 </head>
 
-<body class="body body--backgroundImage">
+<body class="body flex__contentBody body--backgroundImage">
 
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Przelicznik walut</legend>
-            <p class="form__paragraph form__paragraph--light">Obowiązkowe pola zaznaczono*.</p>
-            <p><label class="form__label">Kwota w PLN*<br><input class="form__input js-pln__input" name="currencyPln"
-                        required type="number" min="0.1" max="999999" step="0.1" placeholder="Wpisz kwotę w PLN"
-                        value="10"></label></p>
-            <p><label class="form__label">Wybierz walutę* <br><input checked
-                        class="form__input--radio js-radioEuro__input" type="radio" name="currencyRadio"
-                        value="euro"><span class="form__span--radio">Euro</span></label>
-                <label><input class="form__input--radio js-radioUsd__input" type="radio" name="currencyRadio"
-                        value="usd"><span class="form__span--radio">USD</span></label>
-                <label><input class="form__input--radio js-radioCad__input" type="radio" name="currencyRadio"
-                        value="cad">CAD</label>
-                <label><input class="form__input--radio js-radioGbp__input" type="radio" name="currencyRadio"
-                        value="gbp">GBP</label>
+    <div class="flex__containerForm">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Przelicznik walut</legend>
+                <p class="form__paragraph form__paragraph--light">Obowiązkowe pola zaznaczono*.</p>
+                <p><label class="form__label">Kwota w PLN*<br><input class="form__input js-pln__input"
+                            name="currencyPln" required type="number" min="0.1" max="999999" step="0.1"
+                            placeholder="Wpisz kwotę w PLN" value="10"></label></p>
+                <p><label class="form__label">Wybierz walutę* <br><input checked
+                            class="form__input--radio js-radioEuro__input" type="radio" name="currencyRadio"
+                            value="euro"><span class="form__span--radio">Euro</span></label>
+                    <label><input class="form__input--radio js-radioUsd__input" type="radio" name="currencyRadio"
+                            value="usd"><span class="form__span--radio">USD</span></label>
+                    <label><input class="form__input--radio js-radioCad__input" type="radio" name="currencyRadio"
+                            value="cad">CAD</label>
+                    <label><input class="form__input--radio js-radioGbp__input" type="radio" name="currencyRadio"
+                            value="gbp">GBP</label>
+                </p>
+            </fieldset>
+            <button class=" form__button">Przelicz</button>
+            <p class="form__paragraph form__paragraph--larger">Wynik: <strong
+                    class="form__strong js-form__strong"></strong>
             </p>
-        </fieldset>
-        <button class=" form__button">Przelicz</button>
-        <p class="form__paragraph form__paragraph--larger">Wynik: <strong class="form__strong js-form__strong"></strong>
-        </p>
-    </form>
+        </form>
+    </div>
 
 </body>
 

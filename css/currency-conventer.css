@@ -14,6 +14,14 @@ html {
     padding: 20px;
 }
 
+@media (min-width:2000px){
+    .body {
+        max-width: 3000px;
+        margin: 0;
+        padding: 40px;
+    }
+}
+
 .body--backgroundImage {
     background-image: url("https://cdn.britannica.com/83/189283-050-DF7E0E75/Banknotes-world.jpg");
     background-repeat: no-repeat;

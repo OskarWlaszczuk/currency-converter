@@ -10,7 +10,7 @@ Here is my personal currency-conventer project that will immediately help you fi
     - *BEM* convention
     - *Flex-Box*
     -  CSS Backgrounds and Borders Module Level 3
-    - Media Queries
+    - Media Queries Level 4
         - *Mobile-first*
 - *Java Script*
 - Open Graph Protocol

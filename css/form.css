@@ -1,0 +1,102 @@
+.form__fieldset {
+    box-shadow: 0px 0px 10px 0px #3f4273;
+    border: 3px solid #3f4273;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 25px;
+    width: 100%;
+}
+
+.form__fieldset:hover {
+    box-shadow: 0px 0px 10px 2px #3f4273;
+}
+
+.form__legend {
+    margin: auto;
+    padding: 15px;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #4b2958;
+    border-radius: 20px;
+}
+
+.form__labelText {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #78448d;
+    border-radius: 25px;
+    text-decoration: underline;
+    font-size: larger;
+    width: 100%;
+}
+
+.form__inputField {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.form__select {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    font-style: italic;
+    text-align: center;
+}
+
+.form__resualts {
+    background-color: #3f4273;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.478);
+    border-radius: 20px;
+    width: 80%;
+    min-height: 65px;
+    margin: 17px auto;
+    text-align: center;
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form__resualts:hover {
+    box-shadow: 0px 0px 5px -1px #ffffff99;
+    color: rgba(255, 255, 255, 0.775);
+}
+
+.container {
+    border-bottom: 4px solid #3f4273;
+    border-radius: 7px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.form__button {
+    border: 2px solid #3f4273;
+    display: block;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    background-color: rgb(51, 53, 88);
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    border: 2px solid #7e4040;
+    background-color: #7f3333;
+}
+
+.form__button:active {
+    background-color: #8b4242;
+}

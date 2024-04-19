@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <form class="js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator Walut</legend>
+            <div class="container">
+                <label class="form__labelContainer">
+                    <span class="form__labelText">Kwota w PLN</span>
+                    <input class="form__inputField js-form__inputField" required type="number" min="1" max="9999"
+                        name="plnAmount" step="any" placeholder="Wpisz kwotę w PLN" autofocus>
+                </label>
+            </div>
+            <label class="form__labelContainer">
+                <span class="form__labelText">Wybierz walutę</span>
+                <select name="currencyName" class="form__select js-form__select">
+                    <option class="js-form__usd" value="usdCurrency">USD</option>
+                    <option class="js-form__gbp" value="gbpCurrency">GBP</option>
+                    <option class="js-form__chf" value="chfCurrency">CHF</option>
+                    <option class="js-form__eur" value="eurCurrency">EUR</option>
+                </select>
+            </label>
+            <p class="form__resualts js-form__resualts"></p>
+        </fieldset>
+        <button class="form__button" type="reset">Wyczyść</button>
+    </form>
+</body>
+
+</html>

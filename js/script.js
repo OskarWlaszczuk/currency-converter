@@ -21,25 +21,36 @@ formElement.addEventListener("input", () => {
         case usdOption:
             resualts.innerText = `${pln} zł = ${usd.toFixed(2)} $`;
             selectElement.classList.toggle("form__select--usaTheme");
+            selectElement.classList.remove("form__select--engTheme");
+            selectElement.classList.remove("form__select--eurTheme");
+            selectElement.classList.remove("form__select--cheTheme");
             break;
 
         case gbpOption:
             resualts.innerText = `${pln} zł = ${gbp.toFixed(2)} GBP`;
             selectElement.classList.toggle("form__select--engTheme");
+            selectElement.classList.remove("form__select--usaTheme");
+            selectElement.classList.remove("form__select--eurTheme");
+            selectElement.classList.remove("form__select--cheTheme");
             break;
 
         case chfOption:
             resualts.innerText = `${pln} zł = ${chf.toFixed(2)} CHF`;
             selectElement.classList.toggle("form__select--cheTheme");
+            selectElement.classList.remove("form__select--engTheme");
+            selectElement.classList.remove("form__select--eurTheme");
+            selectElement.classList.remove("form__select--usaTheme");
             break;
 
         case eurOption:
             resualts.innerText = `${pln} zł = ${eur.toFixed(2)} € `;
             selectElement.classList.toggle("form__select--eurTheme");
+            selectElement.classList.remove("form__select--usaTheme");
+            selectElement.classList.remove("form__select--gbpTheme");
+            selectElement.classList.remove("form__select--cheTheme");
             break;
     };
 });
-
 
 formElement.addEventListener("reset", () => {
     inputFieldElement.focus();

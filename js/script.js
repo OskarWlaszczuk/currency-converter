@@ -20,21 +20,26 @@ formElement.addEventListener("input", () => {
     switch (currency) {
         case usdOption:
             resualts.innerText = `${pln} zł = ${usd.toFixed(2)} $`;
+            selectElement.classList.toggle("form__select--usaTheme");
             break;
 
         case gbpOption:
             resualts.innerText = `${pln} zł = ${gbp.toFixed(2)} GBP`;
+            selectElement.classList.toggle("form__select--engTheme");
             break;
 
         case chfOption:
             resualts.innerText = `${pln} zł = ${chf.toFixed(2)} CHF`;
+            selectElement.classList.toggle("form__select--cheTheme");
             break;
 
         case eurOption:
             resualts.innerText = `${pln} zł = ${eur.toFixed(2)} € `;
+            selectElement.classList.toggle("form__select--eurTheme");
             break;
     };
 });
+
 
 formElement.addEventListener("reset", () => {
     inputFieldElement.focus();

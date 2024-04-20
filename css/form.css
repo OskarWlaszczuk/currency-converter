@@ -47,9 +47,38 @@
     padding: 15px;
     border: none;
     border-radius: 20px;
+    font-weight: bolder;
     width: 80%;
     font-style: italic;
     text-align: center;
+}
+
+.form__select--cheTheme {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/640px-Flag_of_Switzerland_%28Pantone%29.svg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.form__select--eurTheme {
+    background-image: url("https://www.countryflags.com/wp-content/uploads/europe-flag-jpg-xl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 38%;
+}
+
+.form__select--usaTheme {
+    background-image: url("https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-xl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 5%;
+}
+
+.form__select--engTheme {
+    background-image: url("https://cdn3.emoji.gg/emojis/1359_England_Flag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
 }
 
 .form__resualts {

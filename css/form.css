@@ -100,7 +100,7 @@
     color: rgba(255, 255, 255, 0.775);
 }
 
-.container {
+.form__sectionContainer {
     border-bottom: 4px solid #3f4273;
     border-radius: 7px;
     padding-bottom: 25px;
@@ -109,6 +109,7 @@
 
 .form__button {
     border: 2px solid #3f4273;
+    border-bottom: 12px solid #3f4273;
     display: block;
     margin: 15px auto;
     padding: 20px;
@@ -123,9 +124,10 @@
 
 .form__button:hover {
     border: 2px solid #7e4040;
+    border-bottom: 12px solid #7e4040;
     background-color: #7f3333;
 }
 
 .form__button:active {
-    background-color: #8b4242;
+    border-bottom: 2px solid #7e4040;
 }

@@ -8,9 +8,12 @@ html {
 
 .body {
     font-family: "Lexend Deca", sans-serif;
-    margin: auto;
     padding: 10px;
     color: white;
     background-color: rgb(37 39 70);
     max-width: 1000px;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

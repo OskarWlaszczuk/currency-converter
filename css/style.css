@@ -11,8 +11,8 @@ html {
     padding: 10px;
     color: white;
     background-color: rgb(37 39 70);
-    max-width: 1000px;
-    max-height: 100vh;
+   max-width: 850px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

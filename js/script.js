@@ -46,7 +46,7 @@ formElement.addEventListener("input", () => {
             resualts.innerText = `${pln} zł = ${eur.toFixed(2)} € `;
             selectElement.classList.toggle("form__select--eurTheme");
             selectElement.classList.remove("form__select--usaTheme");
-            selectElement.classList.remove("form__select--gbpTheme");
+            selectElement.classList.remove("form__select--engTheme");
             selectElement.classList.remove("form__select--cheTheme");
             break;
     };

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
     <script defer src="js/script.js"></script>
+    <script defer src="js/playground.js"></script>
 </head>
 
 <body class="body">
@@ -27,6 +28,7 @@
         <fieldset class="form__fieldset">
             <legend class="form__legend">kalkulator walut</legend>
             <div class="form__sectionContainer">
+                <!-- Dodać kolumny Grid, aby label i input były w jednej linii -->
                 <label>
                     <span class="form__labelText">Kwota w PLN</span>
                     <input class="form__inputField js-form__inputField" required type="number" min="0.1" max="9999"
@@ -44,7 +46,10 @@
             </label>
             <p class="form__resualts js-form__resualts"></p>
         </fieldset>
-        <button class="form__button" type="reset">Wyczyść</button>
+        <section class="form__sectionButtons">
+            <button class="form__button form__button--submit" type="submit">Przelicz</button>
+            <button class="form__button" type="reset">Wyczyść</button>
+        </section>
     </form>
 </body>
 

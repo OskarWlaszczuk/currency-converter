@@ -11,10 +11,10 @@ html {
     padding: 11px;
     color: white;
     background-color: rgb(37 39 70);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/img/bitcoin.png");
+    background-image: url("/img/background-image.png");
     background-size: 20%;
 }

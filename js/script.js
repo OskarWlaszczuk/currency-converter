@@ -1,81 +1,57 @@
 {
+    const displayResualts = (currency, amount) => {
+        const resualtElement = document.querySelector(".js-form__resualts");
+        const resualt = resualtElement.value;
 
-    const displayResualt = (pln, usd, gbp, chf, eur) => {
+        resualt.innerHTML = `${amount} zł = <strong>${currency}</strong>`;
+    };
+
+    const calculateResualt = (amount) => {
+
         const selectElement = document.querySelector(".js-form__select");
-        const currency = selectElement.value;
-        const resualts = document.querySelector(".js-form__resualts");
+        const currentCurrency = selectElement.value;
 
         const usdOption = document.querySelector(".js-form__usd").value;
         const gbpOption = document.querySelector(".js-form__gbp").value;
         const chfOption = document.querySelector(".js-form__chf").value;
         const eurOption = document.querySelector(".js-form__eur").value;
 
+        const usd = amount * 0.24;
+        const gbp = amount * 0.20;
+        const chf = amount * 0.22;
+        const eur = amount * 0.23;
 
-        switch (currency) {
+        switch (currentCurrency) {
             case usdOption:
-                resualts.innerHTML = `${pln} zł = <strong>${usd.toFixed(2)} $</strong`;
-                selectElement.classList.toggle("form__select--usaTheme");
-                selectElement.classList.remove("form__select--engTheme");
-                selectElement.classList.remove("form__select--eurTheme");
-                selectElement.classList.remove("form__select--cheTheme");
+                displayResualts(usd, amount);
                 break;
 
             case gbpOption:
-                resualts.innerHTML = `${pln} zł = <strong>${gbp.toFixed(2)} £</strong>`;
-                selectElement.classList.toggle("form__select--engTheme");
-                selectElement.classList.remove("form__select--usaTheme");
-                selectElement.classList.remove("form__select--eurTheme");
-                selectElement.classList.remove("form__select--cheTheme");
+                displayResualts(gbp, amount);
                 break;
 
             case chfOption:
-                resualts.innerHTML = `${pln} zł = <strong>${chf.toFixed(2)} CHF</strong>`;
-                selectElement.classList.toggle("form__select--cheTheme");
-                selectElement.classList.remove("form__select--engTheme");
-                selectElement.classList.remove("form__select--eurTheme");
-                selectElement.classList.remove("form__select--usaTheme");
+                displayResualts(chf, amount);
                 break;
 
             case eurOption:
-                resualts.innerHTML = `${pln} zł = <strong>${eur.toFixed(2)} €</strong> `;
-                selectElement.classList.toggle("form__select--eurTheme");
-                selectElement.classList.remove("form__select--usaTheme");
-                selectElement.classList.remove("form__select--engTheme");
-                selectElement.classList.remove("form__select--cheTheme");
+                displayResualts(eur, amount);
                 break;
         };
     };
 
-    const calculateResualt = () => {
-        const inputElement = document.querySelector(".js-form__inputField");
-        const pln = inputElement.value;
-
-        const usd = pln * 0.24;
-        const gbp = pln * 0.20;
-        const chf = pln * 0.22;
-        const eur = pln * 0.23;
-
-        displayResualt(pln, usd, gbp, chf, eur);
-    };
-
     const onFormSubmit = (event) => {
         event.preventDefault();
-        calculateResualt();
-    };
 
-    const onFormReset = () => {
         const inputElement = document.querySelector(".js-form__inputField");
-        const resualts = document.querySelector(".js-form__resualts");
+        const amount = inputElement.value;
 
-        inputElement.focus();
-        resualts.innerText = "";
+        calculateResualt(amount);
     };
 
     const init = () => {
         const formElement = document.querySelector(".js-form");
-
         formElement.addEventListener("submit", onFormSubmit);
-        formElement.addEventListener("reset", onFormReset);
     };
 
     init();

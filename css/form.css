@@ -2,12 +2,24 @@
     flex-basis: 50%;
 }
 
+@media (max-width:770px) {
+    .form {
+        flex-basis: 100%;
+    }
+}
+
 .form__fieldset {
     border: 3px solid #3f4273;
     background-color: rgb(37 39 70);
     border-radius: 10px;
     margin: auto;
     padding: 25px;
+}
+
+@media (max-width:770px) {
+    .form__fieldset {
+        margin-bottom: 15px;
+    }
 }
 
 .form__fieldset:hover {
@@ -25,67 +37,51 @@
     text-transform: capitalize;
 }
 
+.form__labelContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
 .form__labelText {
-    display: block;
-    margin: 15px auto;
     text-align: center;
     text-transform: capitalize;
     padding: 20px;
     background-color: #78448d;
-    border-radius: 25px;
+    border-radius: 20px;
     text-decoration: underline;
     font-size: larger;
+    justify-self: start;
+    align-self: center;
 }
 
 .form__inputField {
-    display: block;
-    margin: 15px auto;
     padding: 15px;
     border: none;
     border-radius: 20px;
-    width: 80%;
+}
+
+@media (max-width:770px) {
+    .form__inputField {
+        width: 100%;
+    }
 }
 
 .form__select {
-    display: block;
-    margin: 15px auto;
     padding: 15px;
     border: none;
     border-radius: 20px;
     font-weight: bolder;
-    width: 80%;
     font-style: italic;
     text-align: center;
 }
 
-/* Media queries, zmienić wielkość flag w tle na cover, a położenie na center */
-
-.form__select--cheTheme {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/640px-Flag_of_Switzerland_%28Pantone%29.svg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-}
-
-.form__select--eurTheme {
-    background-image: url("https://www.countryflags.com/wp-content/uploads/europe-flag-jpg-xl.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-}
-
-.form__select--usaTheme {
-    background-image: url("https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-xl.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-}
-
-.form__select--engTheme {
-    background-image: url("https://cdn3.emoji.gg/emojis/1359_England_Flag.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
+@media (max-width:770px) {
+    .form__select {
+        width: 100%;
+    }
 }
 
 .form__resualts {
@@ -98,6 +94,12 @@
     margin: 17px auto;
     text-align: center;
     font-size: x-large;
+}
+
+@media (max-width:770px) {
+    .form__resualts {
+        width: 100%;
+    }
 }
 
 .form__resualts:hover {
@@ -114,7 +116,13 @@
 
 .form__sectionButtons {
     display: flex;
-    flex-wrap: wrap;
+}
+
+@media (max-width:770px) {
+    .form__sectionButtons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .form__button {
@@ -129,6 +137,14 @@
     font-weight: bolder;
     cursor: pointer;
     flex-grow: 1;
+    flex-basis: 49%;
+}
+
+@media (max-width:770px) {
+    .form__button {
+        margin: 3px 0;
+        width: 75%;
+    }
 }
 
 .form__button:hover {

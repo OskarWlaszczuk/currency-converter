@@ -1,15 +1,12 @@
 {
-    const displayResualts = (currency, amount) => {
+    const displayResualts = (amount, currencyAmount, currencyName) => {
         const resualtElement = document.querySelector(".js-form__resualts");
-        const resualt = resualtElement.value;
-
-        resualt.innerHTML = `${amount} zł = <strong>${currency}</strong>`;
+        resualtElement.innerHTML = `${amount} zł = <strong>${currencyAmount} ${currencyName} </strong>`;
     };
 
     const calculateResualt = (amount) => {
-
         const selectElement = document.querySelector(".js-form__select");
-        const currentCurrency = selectElement.value;
+        const currency = selectElement.value;
 
         const usdOption = document.querySelector(".js-form__usd").value;
         const gbpOption = document.querySelector(".js-form__gbp").value;
@@ -21,21 +18,21 @@
         const chf = amount * 0.22;
         const eur = amount * 0.23;
 
-        switch (currentCurrency) {
+        switch (currency) {
             case usdOption:
-                displayResualts(usd, amount);
+                displayResualts(amount.toFixed(2), usd.toFixed(2), usdOption);
                 break;
 
             case gbpOption:
-                displayResualts(gbp, amount);
+                displayResualts(amount.toFixed(2), gbp.toFixed(2), gbpOption);
                 break;
 
             case chfOption:
-                displayResualts(chf, amount);
+                displayResualts(amount.toFixed(2), chf.toFixed(2), chfOption);
                 break;
 
             case eurOption:
-                displayResualts(eur, amount);
+                displayResualts(amount.toFixed(2), eur.toFixed(2), eurOption);
                 break;
         };
     };
@@ -46,12 +43,21 @@
         const inputElement = document.querySelector(".js-form__inputField");
         const amount = inputElement.value;
 
-        calculateResualt(amount);
+        calculateResualt(+amount);
+    };
+
+    const onFormReset = () => {
+        const inputElement = document.querySelector(".js-form__inputField");
+        inputElement.focus();
+
+        const resualtElement = document.querySelector(".js-form__resualts");
+        resualtElement.innerText = "";
     };
 
     const init = () => {
         const formElement = document.querySelector(".js-form");
         formElement.addEventListener("submit", onFormSubmit);
+        formElement.addEventListener("reset", onFormReset);
     };
 
     init();

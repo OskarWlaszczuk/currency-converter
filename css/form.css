@@ -134,6 +134,7 @@
     cursor: pointer;
     flex-grow: 1;
     flex-basis: 49%;
+    transition: 0.5s;
 }
 
 @media (max-width:770px) {
